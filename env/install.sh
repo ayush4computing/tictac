@@ -1,6 +1,7 @@
-sudo apt-get install dos2unix
+sudo apt-get install dos2unix -y
 dos2unix install.sh
-./install.sh 
+sudo chmod u+x install.sh 
+sudo ./install.sh
 wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update; \
