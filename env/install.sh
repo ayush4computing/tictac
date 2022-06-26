@@ -1,7 +1,6 @@
-sudo apt-get install dos2unix -y
-dos2unix install.sh
-sudo chmod u+x install.sh 
-sudo ./install.sh
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
 wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update; \
